@@ -17,7 +17,7 @@ def get_details ():
         if len(first_name) > 0:
             valid = True
     valid = False
-    while not valid
+    while not valid:
         last_name = get_last_name()
         if len(last_name) > 0:
             valid = True
@@ -28,7 +28,17 @@ def get_details ():
             valid = True
     return first_name, last_name, gender
 
-def format_name_male (first_name, last_name):
+def format_name_male (gender, first_name, last_name):
+    return "Mr {0} {1}".format(frist_name, last_name)
 
+def format_name_female (gender, first_name, last_name):
+    return "Ms {0} {1}".format(frist_name, last_name)
 
-def format_name_female (first_name, last_name):
+def format_name(first_name, last_name, gender):
+    if gender == "M":
+        title_name = format_name_male(first_name, last_name)
+    else:
+        title_name = format_name_female(fist_name, last_name)
+
+def output_name(title_name):
+    print(title_name)
