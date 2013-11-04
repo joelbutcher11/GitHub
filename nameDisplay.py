@@ -16,15 +16,19 @@ def get_details ():
         first_name = get_first_name()
         if len(first_name) > 0:
             valid = True
-
     valid = False
     while not valid
         last_name = get_last_name()
         if len(last_name) > 0:
             valid = True
-
     valid = False
     while not valid:
         gender = get_gender()
         if len(gender) > 0:
             valid = True
+    return first_name, last_name, gender
+
+def format_name_male (first_name, last_name):
+
+
+def format_name_female (first_name, last_name):
