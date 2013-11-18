@@ -5,6 +5,12 @@ import random
 # main program
 print("Times-table tester")
 print()
+
+def get_times_table():
+    times_table = int(input("What time tables do you want to be tested on?: "))
+    return times_table
+
+
 testTable = input("Which times-table do you want to be tested on? ")
 testTable = int(testTable)
 for questions in range(1,6):
